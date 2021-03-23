@@ -15,7 +15,8 @@ import java.util.List;
 @Log
 @RestController
 @RequestMapping("/boards")
-@CrossOrigin(origins = "http://localhost:8080", allowedHeaders = "*")
+// 프론트 서버의 포트 번호로 맞춰줘야 내부 통신이 가능함
+@CrossOrigin(origins = "http://localhost:8081", allowedHeaders = "*")
 public class VueBoardController {
     //static final Logger log = LoggerFactory.getLogger(VueBoardController.class);
 
