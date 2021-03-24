@@ -17,6 +17,10 @@
           active-class="active">
         Board
       </router-link>
+      <router-link :to="{ name: 'VueHTMLTest' }"
+          clss="nav-link" active-class="active">
+        VueHTMLTest
+      </router-link>
     </div>
   </div>
 </template>

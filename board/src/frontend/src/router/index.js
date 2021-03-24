@@ -2,11 +2,14 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
-// For Cafe Board
+// For Board
 import BoardListPage from '../views/BoardListPage.vue'
 import BoardRegisterPage from '../views/BoardRegisterPage.vue'
 import BoardModifyPage from '../views/BoardModifyPage.vue'
 import BoardReadPage from '../views/BoardReadPage.vue'
+
+// For VueHTMLTest
+import VueHTMLTest from '../views/VueHTMLTest'
 
 Vue.use(VueRouter)
 
@@ -49,6 +52,13 @@ const routes = [
     props: {
       // 이 옵션을 설정하면 route.params가 컴포넌트의 props에 자동 설정됨
       default: true
+    }
+  },
+  {
+    path: '/vuehtmltest',
+    name: 'VueHTMLTest',
+    components: {
+      default: VueHTMLTest
     }
   }
 ]

@@ -19,7 +19,7 @@ public class DBConfig {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl(
-                "jdbc:mysql://localhost:3306/vuedb?serverTimezone=UTC&useSSL=false"
+                "jdbc:mysql://localhost:3306/vuedb?serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false"
         );
         dataSource.setUsername("khweb");
         dataSource.setPassword("khdkdlxl@123");
