@@ -7,17 +7,17 @@ spring:
     username: khweb
     password: khdkdlxl@123
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    dialect: org.hibernate.dialect.MySQL8Dialect
+    dialect: org.hibernate.dialect.MySQL8Dialect
 
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
+  jpa:
+    hibernate:
+      ddl-auto: update
 
-#    generate-ddl: true
-#    show-sql: true
-#    database: mysql
+    generate-ddl: true
+    show-sql: true
+    database: mysql
 
-#logging:
-#  level:
-#    org:
-#      hibernate: info
+logging:
+  level:
+    org:
+      hibernate: info
