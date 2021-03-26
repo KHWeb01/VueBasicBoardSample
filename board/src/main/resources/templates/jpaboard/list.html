@@ -6,7 +6,7 @@
 </head>
 <body>
     <h2>게시판 목록보기</h2>
-    <a th:href="@{/real_board/getRegister}">
+    <a th:href="@{/jpaboard/register}">
         글쓰기
     </a>
 
@@ -24,21 +24,21 @@
             </td>
         </tr>
 
-        <tr th:each="board: ${lists}">
-            <td align="center" th:text="${board.boardNo}">
-                ${board.boardNo}
+        <tr th:each="jpaBoard: ${lists}">
+            <td align="center" th:text="${jpaBoard.boardNo}">
+                ${jpaBoard.boardNo}
             </td>
             <td align="left">
-                <a th:href="@{|getRead?boardNo=${board.boardNo}|}" th:text="${board.title}">
-                    ${board.title}
+                <a th:href="@{|read?boardNo=${jpaBoard.boardNo}|}" th:text="${jpaBoard.title}">
+                    ${jpaBoard.title}
                 </a>
             </td>
-            <td align="left" th:text="${board.writer}">
-                ${board.writer}
+            <td align="left" th:text="${jpaBoard.writer}">
+                ${jpaBoard.writer}
             </td>
             <td align="center"
-                th:text="${#dates.format(board.regDate, 'yyyy-MM-dd HH:mm:ss')}">
-                ${board.regDate}
+                th:text="${#dates.format(jpaBoard.regDate, 'yyyy-MM-dd HH:mm:ss')}">
+                ${jpaBoard.regDate}
             </td>
         </tr>
     </table>
@@ -48,6 +48,8 @@
 
         if (result) {
             alert(result)
+            window.location.reload();
+            delete result
         }
     </script>
 </body>
