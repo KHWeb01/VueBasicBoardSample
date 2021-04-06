@@ -41,3 +41,10 @@ export default {
 }
 
 </script>
+
+<style>
+h1 {
+  color: #454545;
+  text-align: center;
+}
+</style>

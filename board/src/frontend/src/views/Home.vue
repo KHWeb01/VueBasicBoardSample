@@ -88,4 +88,7 @@ img {
   float: right;
 }
 
+label { display: block; }
+.table_layout { width: 98%; }
+table { width: 100%; }
 </style>
