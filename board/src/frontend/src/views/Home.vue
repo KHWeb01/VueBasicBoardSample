@@ -21,6 +21,13 @@
           clss="nav-link" active-class="active">
         VueHTMLTest
       </router-link>
+      <!-- 라우터 페이지
+      router > index.js 에 name에 해당하는 페이지 URL 경로 설정
+      실제 name에 해당하는 Vue Component를 작성해야함 -->
+      <router-link :to="{ name: 'PaginationBoardListPage' }"
+          clss="nav-link" active-class="active">
+        PaginationBoard
+      </router-link>
     </div>
   </div>
 </template>

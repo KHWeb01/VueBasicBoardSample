@@ -11,6 +11,9 @@ import BoardReadPage from '../views/BoardReadPage.vue'
 // For VueHTMLTest
 import VueHTMLTest from '../views/VueHTMLTest'
 
+// For Pagination Board
+import PaginationBoardListPage from '../views/PaginationBoardListPage'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -59,6 +62,13 @@ const routes = [
     name: 'VueHTMLTest',
     components: {
       default: VueHTMLTest
+    }
+  },
+  {
+    path: '/paginationboard',
+    name: 'PaginationBoardListPage',
+    components: {
+      default: PaginationBoardListPage
     }
   }
 ]
